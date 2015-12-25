@@ -1,1 +1,14 @@
 iTem!
+
+  <ul>
+    <li ng-repeat="recipe in recipes">
+    {{ recipe.handlerName }}
+    <div ng-repeat="ingredient in recipe.ingredients">
+      <span ng-repeat="item in ingredient.items">
+        {{ item.stackName }}
+      </span>
+    </div>
+    </li>
+  </ul>
+
+

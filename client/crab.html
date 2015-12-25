@@ -4,7 +4,7 @@
 
 <body ng-app="crab">
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" ng-controller="NavBarCtrl">
     <div class="container-fluid">
     </div>
     <div class="collapse navbar-collapse">
@@ -13,8 +13,11 @@
         <a ui-sref="itemList">Items</a>
         </li>
       </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <button class="btn btn-default" ng-click="doImport()">Import</button>
+      </form>
     </div>
-  </nav>
+    </nav>
 
   <div class="container">
     <h1>Welcome to Meteor!</h1>
